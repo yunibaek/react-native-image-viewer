@@ -551,6 +551,7 @@ export default class ImageViewer extends React.Component<Props, State> {
               pinchToZoom={this.props.enableImageZoom && !this.state.isShowMenu}
               enableDoubleClickZoom={this.props.enableImageZoom && !this.state.isShowMenu}
               doubleClickInterval={this.props.doubleClickInterval}
+              style={{justifyContent: 'flex-start'}}
             >
               {this!.props!.renderImage!(image.props)}
             </ImageZoom>
